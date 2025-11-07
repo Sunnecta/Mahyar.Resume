@@ -1,15 +1,29 @@
-<!DOCTYPE html><html lang="fa"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>رزومه مهندس مهیار شیرعلی یان</title><script>
-(function(){
-  const pdfFile="https://sunnecta.github.io/Mahyar.Resume/Mahyar%20Resume.pdf";
-  const ua=navigator.userAgent.toLowerCase();
-  const isAndroid=ua.includes("android");
-  const isIOS=/iphone|ipad|ipod/.test(ua);
-  let viewer="";
-  if(isIOS){viewer=pdfFile;}
-  else if(isAndroid){viewer="https://mozilla.github.io/pdf.js/web/viewer.html?file="+encodeURIComponent(pdfFile);}
-  else{viewer="https://mozilla.github.io/pdf.js/web/viewer.html?file="+encodeURIComponent(pdfFile);}
-  window.location.href=viewer;
-})();
-</script><style>
-body{font-family:sans-serif;text-align:center;margin-top:50px;direction:rtl}
-</style></head><body><p>در حال باز کردن فایل رزومه...</p></body></html>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>رزومه مهندس مهیار شیرعلی یان</title>
+  <script>
+  (function(){
+    const pdfFile = "https://sunnecta.github.io/Mahyar.Resume/Mahyar%20Resume.pdf";
+    const ua = navigator.userAgent.toLowerCase();
+    const isAndroid = ua.includes("android");
+    const isIOS = /iphone|ipad|ipod/.test(ua);
+    let viewer = "";
+    if (isIOS) {
+      viewer = pdfFile; // مستقیماً در Safari باز می‌شود
+    } else {
+      viewer = "https://mozilla.github.io/pdf.js/web/viewer.html?file=" + encodeURIComponent(pdfFile);
+    }
+    window.location.href = viewer;
+  })();
+  </script>
+  <style>
+    body {font-family: sans-serif; text-align: center; margin-top: 50px; direction: rtl;}
+  </style>
+</head>
+<body>
+  <p>در حال باز کردن فایل رزومه...</p>
+</body>
+</html>
